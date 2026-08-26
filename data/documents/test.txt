@@ -1,0 +1,11 @@
+Giới thiệu về RAG (Retrieval-Augmented Generation)
+
+RAG là viết tắt của Retrieval-Augmented Generation, là một kỹ thuật kết hợp giữa tìm kiếm thông tin (retrieval) và mô hình ngôn ngữ lớn (LLM) để sinh câu trả lời. Thay vì chỉ dựa vào kiến thức đã học sẵn của mô hình, RAG cho phép hệ thống tra cứu thông tin từ nguồn tài liệu bên ngoài trước khi trả lời, giúp câu trả lời chính xác và cập nhật hơn.
+
+Kiến trúc RAG gồm ba bước chính. Đầu tiên là bước ingest, tức là nạp tài liệu vào hệ thống, chia nhỏ văn bản thành các đoạn (chunk) và chuyển mỗi đoạn thành vector embedding. Thứ hai là bước retrieval, khi người dùng đặt câu hỏi, hệ thống sẽ tìm các đoạn văn bản có nội dung gần nghĩa nhất với câu hỏi bằng cách so sánh vector embedding. Thứ ba là bước generation, mô hình ngôn ngữ sẽ dựa vào các đoạn văn bản tìm được để sinh ra câu trả lời cuối cùng.
+
+Ưu điểm lớn nhất của RAG là giảm hiện tượng hallucination, tức là mô hình bịa ra thông tin sai. Vì câu trả lời luôn dựa trên tài liệu thật, RAG phù hợp cho các ứng dụng như chatbot hỏi đáp nội bộ công ty, trợ lý học tập, hoặc tra cứu tài liệu pháp lý.
+
+Ollama là một công cụ cho phép chạy các mô hình ngôn ngữ lớn ngay trên máy tính cá nhân, không cần gửi dữ liệu lên server bên ngoài và không tốn phí sử dụng API. Đây là lựa chọn phù hợp cho các dự án cần bảo mật dữ liệu hoặc không có ngân sách cho API trả phí.
+
+Python là ngôn ngữ lập trình phổ biến nhất trong lĩnh vực trí tuệ nhân tạo và học máy, nhờ có nhiều thư viện hỗ trợ như PyTorch, TensorFlow, scikit-learn, sentence-transformers và LangChain.
