@@ -1,0 +1,7 @@
+Tài liệu kiểm thử RAG - AI Project
+
+Mục tiêu của một AI project là biến mô hình hoặc thuật toán thành một hệ thống có thể sử dụng được. Một pipeline thường gồm dữ liệu, preprocessing, model, evaluation, API và giao diện.
+
+Trong RAG chatbot, dữ liệu được chia thành các chunk. Chunk được embedding và lưu trong vector store. Khi người dùng đặt câu hỏi, hệ thống tạo query embedding, thực hiện similarity search và lấy các chunk liên quan. Những chunk này được đưa vào prompt cùng câu hỏi để LLM sinh câu trả lời.
+
+Một hệ thống tốt cần có logging, xử lý lỗi, kiểm thử và cơ chế hiển thị nguồn. Nếu knowledge base không chứa thông tin cần thiết, chatbot nên thông báo rằng dữ liệu hiện có chưa đủ thay vì tự suy đoán.

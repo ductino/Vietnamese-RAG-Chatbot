@@ -3,7 +3,7 @@ Vietnamese RAG Chatbot
 Chatbot hỏi-đáp tài liệu tiếng Việt sử dụng kiến trúc RAG (Retrieval-Augmented Generation), chạy hoàn toàn local — không cần API key và không phụ thuộc vào dịch vụ bên thứ ba.
 
 Demo
-<!-- Thêm ảnh chụp màn hình hoặc GIF demo ở đây --> <!-- ![Demo](docs/demo.gif) -->
+![alt text](image.png)
 Tính năng
 Nạp tài liệu từ file .docx, .txt, .md
 Tìm kiếm ngữ nghĩa (semantic search) bằng vector embedding đa ngôn ngữ
